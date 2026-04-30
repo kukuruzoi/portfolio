@@ -7,92 +7,108 @@
     <meta name="description" content="Портфолио">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-      <img src="img/main-logo.svg" alt="логотип" width="60" height="60">
-      <nav>
-        <a href="#about">Обо мне</a>
-        <a href="#skills">Навыки</a>
-        <a href="#interest">Интересы</a>
-        <a href="#contacts">Контакты</a>
-      </nav>
-    </header>
+    <div class="container">
+        <header class="main-header">
+            <img src="img/main-logo.svg" alt="логотип" width="60" height="60">
+            <nav class="main-nav">
+                <a href="#about">Обо мне</a>
+                <a href="#skills">Навыки</a>
+                <a href="#interest">Интересы</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+        </header>
 
-    <main>
-        <section>
-            <h1>Семижон Дарья</h1>
-            <p>Программист</p>
-            <img src="img/user-photo.jpg" alt="фото" width="400" height="400">
-        </section>
+        <main>
+            <section class="intro">
+                <h1>Семижон Дарья</h1>
+                <p class="subtitle">Программист</p>
+                <img src="img/user-photo.jpg" alt="фото" width="400" height="400" class="user-photo">
+            </section>
 
-        <section id="about">
-            <h2>Пара слов обо мне</h2>
-            <p>Привет ✌</p>
-            <p>В данный момент я учусь в магистратуре МФ МГТУ им. Н. Э. Баумана 
-по направлению «Информатика и вычисли­тельная техника».</p>
-            <p>В прошлом году защитил диплом бакалавра на тему «Разработка очень сложного программного комплекса для супер-важной цели». Работа была высоко оценена комиссией.</p>
-            <p>Также я уже успел поработать инженером в одном провайдере в Пушкино, 
-но в будущем планирую стать разработчиком сложных программных комплексов и систем.</p>
-        </section>
+            <section id="about" class="about">
+                <h2>Пара слов обо мне</h2>
+                <p>Привет ✌</p>
+                <p>В данный момент я учусь в магистратуре МФ МГТУ им. Н. Э. Баумана 
+    по направлению «Информатика и вычисли­тельная техника».</p>
+                <p>В прошлом году защитил диплом бакалавра на тему «Разработка очень сложного программного комплекса для супер-важной цели». Работа была высоко оценена комиссией.</p>
+                <p>Также я уже успел поработать инженером в одном провайдере в Пушкино, 
+    но в будущем планирую стать разработчиком сложных программных комплексов и систем.</p>
+            </section>
 
-        <section id="skills">
-            <h2>Мои навыки</h2>
-            <div>
-                Сортировать
-                <button>по названию</button>
-                <button>по уровню</button>
-            </div>
-            <dl>
-                <dt>html</dt>
-                <dd>
-                    <div style="width: 40%;">40%</div>
-                </dd>
-                <dt>css</dt>
-                <dd>
-                    <div style="width: 40%;">40%</div>
-                </dd>
-                <dt>python</dt>
-                <dd>
-                    <div style="width: 40%;">40%</div>
-                </dd>
-                <dt>c++</dt>
-                <dd>
-                    <div style="width: 40%;">40%</div>
-                </dd>
-            </dl>
-        </section>
+            <section id="skills" class="skills">
+                <h2>Мои навыки</h2>
+                <div>
+                    Сортировать
+                    <button>по названию</button>
+                    <button>по уровню</button>
+                </div>
+                <dl class="skill-list">
+                    <dt class="skill-item skill-item_html">html</dt>
+                    <dd class="skill-level">
+                        <div style="width: 40%;">40%</div>
+                    </dd>
+                    <dt class="skill-item skill-item_css">css</dt>
+                    <dd class="skill-level">
+                        <div style="width: 40%;">40%</div>
+                    </dd>
+                    <dt class="skill-item skill-item_js">JS</dt>
+                    <dd class="skill-level">
+                        <div style="width: 40%;">40%</div>
+                    </dd>
+                    <dt class="skill-item skill-item_python">python</dt>
+                    <dd class="skill-level">
+                        <div style="width: 40%;">40%</div>
+                    </dd>
+                </dl>
+            </section>
 
-        <section id="interest">
-            <h2>Мои интересы</h2>
-            <p>Наибольший интерес для меня в данный момент представляет программирование и изучение искусственного интеллекта.</p>
-            <p>
-                Но помимо учёбы и работы я также люблю играть на барабанах и читать зарубежную классику.
-            </p>
-        </section>
+            <section id="interest" class="interest">
+                <h2>Мои интересы</h2>
+                <p>Наибольший интерес для меня в данный момент представляет программирование и изучение искусственного интеллекта.</p>
+                <p>
+                    Но помимо учёбы и работы я также люблю играть на барабанах и читать зарубежную классику.
+                </p>
+            </section>
 
-        <section id="contacts">
-            <h2>Мои контакты</h2>
-            <ul>
-                <li>
-                    <a href="tel:+79991234567">+7 999 123-45-67</a>
-                </li>
-                    
-                <li>
-                    <a href="mailto:email@mail.ru">email@mail.ru</a>
-                </li>   
-            </ul>
-            
-            <ul>
-                <li><a href="https://www.instagram.com/">Instagram</a></li>
-                <li><a href="https://github.com/">Github</a></li>
-                <li><a href="https://vk.com/">ВК</a></li>
-                <li><a href="https://web.telegram.org/a/">Telegram</a></li>  
-            </ul>
-        </section>
-    </main>
-    <footer>
+            <section id="contacts" class="contacts">
+                <h2>Мои контакты</h2>
+                <ul class="contact">
+                    <li>
+                        <a href="tel:+79991234567" class="contact-link contact-link_phone">+7 999 123-45-67</a>
+                    </li>
+                        
+                    <li>
+                        <a href="mailto:email@mail.ru" class="contact-link contact-link_mail">email@mail.ru</a>
+                    </li>   
+                </ul>
+                
+                <ul class="social">
+                    <li><a href="https://www.instagram.com/" class="social-link social-link_instagram">
+                        <span class="visually-hidden">Instagram</span>
+                    </a></li>
+                    <li><a href="https://github.com/" class="social-link social-link_github">
+                        <span class="visually-hidden">Github</span>
+                    </a></li>
+                    <li><a href="https://vk.com/" class="social-link social-link_vk">
+                        <span class="visually-hidden">ВК</span>
+                    </a></li>
+                    <li><a href="https://web.telegram.org/a/" class="social-link social-link_telegram">
+                        <span class="visually-hidden">Telegram</span>
+                    </a></li>  
+                </ul>
+            </section>
+        </main>
+    </div>
+    <footer class="main-footer">
+        <div class="container">
             <p>2026 Семижон Дарья</p>
+        </div>
     </footer>  
 </body>
 </html>
