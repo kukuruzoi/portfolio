@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/open-sans-v1.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     --txt-color: #212121;
     --green: #09A494;
@@ -40,7 +48,8 @@ h3 {
     line-height: 120%;
 }
 
-a, button {
+a,
+button {
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -82,14 +91,14 @@ footer {
     padding: 0 20px;
 }
 
-.main-nav a{
+.main-nav a {
     display: inline-block;
     text-decoration: none;
     padding: 10px 15px;
     color: var(--txt-color)
 }
 
-.main-nav a:hover{
+.main-nav a:hover {
     color: var(--green)
 }
 
@@ -153,10 +162,20 @@ footer {
     padding: 0;
     list-style-type: none;
 }
+
 .contact li {
     display: inline-block;
     margin: 0;
     padding: 0;
+}
+
+.contact a {
+    text-decoration: none;
+    color: var(--txt-color)
+}
+
+.contact a:hover {
+    color: var(--green)
 }
 
 .contact-link {
@@ -202,7 +221,7 @@ footer {
 
 .skill-level div {
     height: 14px;
-    background-color: var(--bg-color);
+    background-color: var(--green);
     border-radius: 8px;
 }
 
