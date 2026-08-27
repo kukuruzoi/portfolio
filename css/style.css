@@ -357,6 +357,10 @@ section {
     .skill-level {
         font-size: 0;
     }
+    .user-photo {
+        width: 250px;
+        height: 250px;
+    }
 }
 
 @media screen and (max-width: 650px){
@@ -412,6 +416,10 @@ section {
     .main-header {
         gap: 20px;
     }
+    .user-photo {
+        width: 150px;
+        height: 150px;
+    }
 }
 
 @media screen and (max-width: 360px){
@@ -466,5 +474,9 @@ section {
     }
     .main-header {
         gap: 20px;
+    }
+    .user-photo {
+        width: 150px;
+        height: 150px;
     }
 }
