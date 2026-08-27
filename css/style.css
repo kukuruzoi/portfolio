@@ -419,6 +419,13 @@ section {
     .user-photo {
         width: 150px;
         height: 150px;
+        margin: 0 auto;
+    }
+    .intro {
+        flex-direction: column-reverse;
+        gap: 30px;
+        margin-bottom: 10px;
+        text-align: center;
     }
 }
 
