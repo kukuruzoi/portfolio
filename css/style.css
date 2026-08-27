@@ -416,6 +416,14 @@ section {
     .main-header {
         gap: 20px;
     }
+
+    section {
+        margin-bottom: 50px;
+    }
+    
+    .main-header {
+        margin-bottom: 50px;
+    }
     .user-photo {
         width: 150px;
         height: 150px;
@@ -482,8 +490,21 @@ section {
     .main-header {
         gap: 20px;
     }
+    section {
+        margin-bottom: 50px;
+    }
+    
+    .main-header {
+        margin-bottom: 50px;
+    }
     .user-photo {
         width: 150px;
         height: 150px;
+    }
+    .intro {
+        flex-direction: column-reverse;
+        gap: 30px;
+        margin-bottom: 50px;
+        text-align: center;
     }
 }
