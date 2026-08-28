@@ -288,7 +288,9 @@ p:last-child {
 }
 
 .skills-head h2 {
-    margin: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .skills-head {
@@ -297,6 +299,7 @@ p:last-child {
     display: flex;
     justify-content: space-between; 
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .skills-button {
@@ -369,6 +372,7 @@ section {
     }
     h2 {
         font-size: 20px;
+        margin-bottom: 30px;
     }
     h3 {
         font-size: 16px;
@@ -435,6 +439,10 @@ section {
         margin-bottom: 10px;
         text-align: center;
     }
+
+    .skills-head {
+        margin-bottom: 30px;
+    }
 }
 
 @media screen and (max-width: 360px){
@@ -443,6 +451,7 @@ section {
     }
     h2 {
         font-size: 20px;
+        margin-bottom: 30px;
     }
     h3 {
         font-size: 16px;
@@ -506,5 +515,39 @@ section {
         gap: 30px;
         margin-bottom: 50px;
         text-align: center;
+    }
+
+    .skills-head {
+        margin-bottom: 30px;
+        flex-direction: column;
+    }
+
+    .skills-button {
+        gap: 10px;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        text-align: center;
+    }
+    .skills-button button{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .skills-head {
+        margin-bottom: 30px;
+        flex-direction: column;
+    }
+
+    .skills-button {
+        gap: 10px;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        text-align: center;
+    }
+    .skills-button button{
+        width: 100%;
     }
 }
