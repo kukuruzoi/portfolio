@@ -449,6 +449,9 @@ section {
     .contact-link {
         padding: 8px 0px 8px 42px;
     }
+    .main-footer {
+        padding: 30px, 20px;
+    }
 }
 
 @media screen and (max-width: 360px){
@@ -546,6 +549,9 @@ section {
 
     .contact-link {
         padding: 8px 0px 8px 42px;
+    }
+    .main-footer {
+        padding: 30px, 20px;
     }
 }
 
