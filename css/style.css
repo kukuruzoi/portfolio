@@ -108,6 +108,7 @@ footer {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    flex-wrap: wrap;
 }
 
 .social li {
@@ -161,8 +162,12 @@ footer {
 
 .contact {
     margin: 0;
+    margin-bottom: 40px;
     padding: 0;
     list-style-type: none;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
 .contact li {
@@ -308,13 +313,6 @@ p:last-child {
     gap: 20px;
 }
 
-.contact {
-    display: flex;
-    gap: 40px;
-    margin: 0;
-    margin-bottom: 40px;
-}
-
 .social {
     margin: 0;
     display: flex;
@@ -443,6 +441,14 @@ section {
     .skills-head {
         margin-bottom: 30px;
     }
+
+    .contact {
+        margin-bottom: 20px;
+    }
+
+    .contact-link {
+        padding: 8px 0px 8px 42px;
+    }
 }
 
 @media screen and (max-width: 360px){
@@ -531,6 +537,15 @@ section {
     }
     .skills-button button{
         width: 100%;
+    }
+    .contact {
+        margin-bottom: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contact-link {
+        padding: 8px 0px 8px 42px;
     }
 }
 
