@@ -301,8 +301,6 @@ p:last-child {
 }
 
 .skills-head {
-    margin: 0;
-    margin-bottom: 40px;
     display: flex;
     justify-content: space-between; 
     align-items: flex-start;
