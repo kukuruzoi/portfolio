@@ -459,6 +459,24 @@ section {
     }
 }
 
+@media screen and (max-width: 380px){
+    .skills-head {
+        margin-bottom: 30px;
+        flex-direction: column;
+    }
+
+    .skills-button {
+        gap: 10px;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        text-align: center;
+    }
+    .skills-button button{
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 360px){
     h1 {
         font-size: 32px;
@@ -561,23 +579,5 @@ section {
     }
     .main-footer {
         padding: 30px 20px;
-    }
-}
-
-@media screen and (max-width: 380px){
-    .skills-head {
-        margin-bottom: 30px;
-        flex-direction: column;
-    }
-
-    .skills-button {
-        gap: 10px;
-        flex-direction: column;
-        width: 100%;
-        align-items: flex-start;
-        text-align: center;
-    }
-    .skills-button button{
-        width: 100%;
     }
 }
