@@ -140,19 +140,19 @@ footer {
 }
 
 .social-link_instagram {
-    background-image: url("../img/social=instagram.svg");
+    background-image: url("../img/social/instagram.svg");
 }
 
 .social-link_github {
-    background-image: url("../img/social=github.svg");
+    background-image: url("../img/social/github.svg");
 }
 
 .social-link_vk {
-    background-image: url("../img/social=vk.svg");
+    background-image: url("../img/social/vk.svg");
 }
 
 .social-link_telegram {
-    background-image: url("../img/social=telegram.svg");
+    background-image: url("../img/social/telegram.svg");
 }
 
 .contact {
@@ -182,7 +182,7 @@ footer {
 
 .contact-link {
     display: block;
-    padding: 5px 0px 5px 42px;
+    padding: 5px 0 5px 42px;
     background-position: left;
     background-repeat: no-repeat;
 }
@@ -232,19 +232,19 @@ footer {
 }
 
 .skill-item_html {
-    background-image: url("../img/skill=html.svg");
+    background-image: url("../img/skill/html.svg");
 }
 
 .skill-item_css {
-    background-image: url("../img/skill=css.svg");
+    background-image: url("../img/skill/ss.svg");
 }
 
 .skill-item_js {
-    background-image: url("../img/skill=javascript.svg");
+    background-image: url("../img/skill/javascript.svg");
 }
 
 .skill-item_python {
-    background-image: url("../img/skill=python.svg");
+    background-image: url("../img/skill/python.svg");
 }
 
 .main-header {
@@ -346,7 +346,7 @@ section {
         font-size: 28px;
     }
     .skills-head {
-        margin: 0px;
+        margin: 0;
     }
     .user-photo {
         width: 250px;
@@ -401,10 +401,10 @@ section {
         height: 30px;
     }
     .nav-btn_close {
-        background-image: url(../img/Property\ 1=close.svg);
+        background-image: url(../img/close.svg);
     }
     .nav-btn_open {
-        background-image: url(../img/Property\ 1=burger.svg);
+        background-image: url(../img/burger.svg);
     }
     .main-header-wrap {
         width: 100%;
@@ -420,7 +420,7 @@ section {
     .user-photo {
         width: 150px;
         height: 150px;
-        margin: 0 auto;
+        align-items: center
     }
     .intro {
         flex-direction: column-reverse;
@@ -441,7 +441,7 @@ section {
     }
 
     .contact-link {
-        padding: 8px 0px 8px 42px;
+        padding: 8px 0 8px 42px;
     }
     .main-footer {
         padding: 30px 20px;
@@ -501,7 +501,7 @@ section {
     }
 
     .contact-link {
-        padding: 8px 0px 8px 42px;
+        padding: 8px 0 8px 42px;
     }
     .main-footer {
         padding: 30px 20px;
