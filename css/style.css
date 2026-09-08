@@ -28,6 +28,7 @@ body {
 }
 
 h1 {
+    font-family: "Open Sans", "Arial", sans-serif;
     font-size: 60px;
     font-weight: 700;
     line-height: 110%;
@@ -236,7 +237,7 @@ footer {
 }
 
 .skill-item_css {
-    background-image: url("../img/skill/ss.svg");
+    background-image: url("../img/skill/css.svg");
 }
 
 .skill-item_js {
@@ -345,8 +346,12 @@ section {
     .subtitle {
         font-size: 28px;
     }
+    section .intro {
+        gap: 70px;
+    }
     .skills-head {
         margin: 0;
+        gap: 20px;
     }
     .user-photo {
         width: 250px;
@@ -398,7 +403,10 @@ section {
         all: unset;
         display: block;
         width: 30px;
-        height: 30px;
+        height: 30px;  
+    }
+    .nav-btn:hover {
+        background-color: var(--bg-color);
     }
     .nav-btn_close {
         background-image: url(../img/close.svg);
@@ -416,11 +424,14 @@ section {
     section {
         margin-bottom: 50px;
     }
+
+    .intro {
+        align-items: center;
+    }
     
     .user-photo {
         width: 150px;
         height: 150px;
-        align-items: center
     }
     .intro {
         flex-direction: column-reverse;
@@ -432,8 +443,8 @@ section {
         margin-bottom: 10px;
     }
 
-    .skills-head {
-        margin-bottom: 30px;
+    .social {
+        gap: 15px;
     }
 
     .contact {
@@ -450,6 +461,8 @@ section {
 
 @media screen and (max-width: 380px){
     .skills-head {
+        gap: 0;
+        margin-bottom: 30px;;
         flex-direction: column;
     }
 
@@ -493,6 +506,10 @@ section {
 
     .intro {
         margin-bottom: 50px;
+    }
+
+    .skills-head h2 {
+        margin-bottom: 20px;
     }
 
     .contact {
