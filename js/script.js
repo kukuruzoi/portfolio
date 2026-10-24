@@ -4,22 +4,22 @@ const data = [
     {
         name: "HTML",
         level: 40,
-        uniqueClass: "skill-item_html"
+        bgImg: "html.svg"
     },
     {
         name: "CSS",
         level: 40,
-        uniqueClass: "skill-item_css"
+        bgImg: "css.svg"
     },
     {
         name: "Python",
         level: 60,
-        uniqueClass: "skill-item_python"
+        bgImg: "python.svg"
     },
     {
         name: "JS",
         level: 40,
-        uniqueClass: "skill-item_js"
+        bgImg: "javascript.svg"
     }
 ];
 
@@ -30,8 +30,9 @@ data.forEach((item) => {
     let dd = document.createElement('dd');
     let div = document.createElement('div');
 
-    dt.className = `skill-item ${item.uniqueClass}`;
+    dt.className = "skill-item";
     dt.textContent = item.name;
+    dt.style.backgroundImage = `url("../img/skill/${item.bgImg}")`;
     
     div.style.width = `${item.level}%`;
     div.textContent = `${item.level}%`;
