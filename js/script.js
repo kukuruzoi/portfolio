@@ -30,12 +30,14 @@ const skills = {
       let dd = document.createElement("dd");
       let div = document.createElement("div");
 
+      let itemLevel = item.level
+
       dt.className = "skill-item";
       dt.textContent = item.name;
       dt.style.backgroundImage = `url("../portfolio/img/skill/${item.bgImg}")`;
 
-      div.style.width = `${item.level}%`;
-      div.textContent = `${item.level}%`;
+      div.style.width = `${itemLevel}%`;
+      div.textContent = `${itemLevel}%`;
 
       dd.className = "skill-level";
 
