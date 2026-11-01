@@ -34,7 +34,7 @@ const skills = {
 
       dt.className = "skill-item";
       dt.textContent = item.name;
-      dt.style.backgroundImage = `url("../portfolio/img/skill/${item.bgImg}")`;
+      dt.style.backgroundImage = `url("/img/skill/${item.bgImg}")`;
 
       div.style.width = `${itemLevel}%`;
       div.textContent = `${itemLevel}%`;
