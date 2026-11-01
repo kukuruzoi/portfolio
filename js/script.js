@@ -26,11 +26,11 @@ const skills = {
 
   generateList: function (parentElement) {
     this.data.forEach((item) => {
-      let dt = document.createElement("dt");
-      let dd = document.createElement("dd");
-      let div = document.createElement("div");
+      const dt = document.createElement("dt");
+      const dd = document.createElement("dd");
+      const div = document.createElement("div");
 
-      let itemLevel = item.level
+      const itemLevel = item.level
 
       dt.className = "skill-item";
       dt.textContent = item.name;
