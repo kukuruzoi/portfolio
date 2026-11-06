@@ -107,3 +107,16 @@ function getComparer (prop) {
   }
 }
 
+
+const mainNav = document.querySelector(".main-nav");
+const btnNav = document.querySelector(".nav-btn");
+console.log(mainNav);
+console.log(btnNav);
+
+btnNav.addEventListener("click", (e) => {
+  let target = e.target;
+
+  if (target.tagName == "BUTTON") {
+    console.log("Нажата кнопка закрытия");
+  }
+})
