@@ -4,7 +4,7 @@ const skills = {
   data: [
     {
       name: "HTML",
-      level: 40,
+      level: 30,
       bgImg: "html.svg",
     },
     {
@@ -14,12 +14,12 @@ const skills = {
     },
     {
       name: "Python",
-      level: 60,
+      level: 50,
       bgImg: "python.svg",
     },
     {
       name: "JS",
-      level: 40,
+      level: 60,
       bgImg: "javascript.svg",
     },
   ],
@@ -60,11 +60,11 @@ skillsBtn.addEventListener('click', (e) => {
   if (target.tagName == "BUTTON") {
     switch(target.dataset.type) {
       case 'name':
-        console.log("Сортировка по имени");
+        sortByName();
         break;
       
       case 'level':
-        console.log("Сортировка по уровню");
+        sortByLevel();
         break;
 
       default:
@@ -73,3 +73,45 @@ skillsBtn.addEventListener('click', (e) => {
     }
   } 
 });
+
+
+function sortByName() {
+  skillList.innerHTML = "";
+  
+  const data = skills.data;
+
+  data.sort(getComparer("name"));
+  skills.generateList(skillList);
+
+  console.log("Сортировка по имени");
+  console.log(data);
+};
+
+
+function sortByLevel() {
+  skillList.innerHTML = "";
+
+  const data = skills.data;
+
+  data.sort(getComparer("level"));
+  skills.generateList(skillList);
+
+  console.log("Сортировка по уровню");
+  console.log(data);
+};
+
+
+function getComparer (prop) {
+  return function compare(a, b) {
+    if (a[prop] < b[prop]) {
+      return -1;
+    }
+
+    if (a[prop] > b[prop]) {
+      return 1;
+    }
+
+    return 0;
+  }
+}
+
