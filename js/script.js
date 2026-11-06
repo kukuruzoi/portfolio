@@ -50,3 +50,26 @@ const skills = {
 const skillList = document.querySelector("dl.skill-list");
 
 skills.generateList(skillList);
+
+const skillsBtn = document.querySelector('.skills-button');
+console.log(skillsBtn);
+
+skillsBtn.addEventListener('click', (e) => {
+  let target = e.target;
+
+  if (target.tagName == "BUTTON") {
+    switch(target.dataset.type) {
+      case 'name':
+        console.log("Сортировка по имени");
+        break;
+      
+      case 'level':
+        console.log("Сортировка по уровню");
+        break;
+
+      default:
+        console.log("Неизвестная кнопка");
+        break;
+    }
+  } 
+});
