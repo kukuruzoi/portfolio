@@ -24,6 +24,8 @@ const skills = {
     },
   ],
 
+  sortMode: null,
+
   generateList: function (parentElement) {
     parentElement.innerHTML = "";
     this.data.forEach((item) => {
@@ -47,15 +49,28 @@ const skills = {
     });
   },
 
-  sortMode: null,
+  sortList: function (prop, parentElement) {
+    if (this.sortMode == prop) {
+      this.data.reverse();
+      console.log("Инвертировали порядок сортировки");
+    }
+    
+    else {
+      this.data.sort(getComparer(prop));
+      this.sortMode = prop;
+      console.log("Отсортировали данные");
+    }
+
+    this.generateList(parentElement);
+
+    console.log(this.data);
+  },
 };
 
 const skillList = document.querySelector("dl.skill-list");
+const skillsBtn = document.querySelector('.skills-button');
 
 skills.generateList(skillList);
-
-const skillsBtn = document.querySelector('.skills-button');
-console.log(skillsBtn);
 
 skillsBtn.addEventListener('click', (e) => {
   let target = e.target;
@@ -63,11 +78,11 @@ skillsBtn.addEventListener('click', (e) => {
   if (target.tagName == "BUTTON") {
     switch(target.dataset.type) {
       case 'name':
-        sortList("name");
+        skills.sortList("name", skillList);
         break;
       
       case 'level':
-        sortList("level");
+        skills.sortList("level", skillList);
         break;
 
       default:
@@ -76,26 +91,6 @@ skillsBtn.addEventListener('click', (e) => {
     }
   } 
 });
-
-
-function sortList(prop) {
-  const data = skills.data; 
-
-  if (skills.sortMode == prop) {
-    data.reverse();
-    console.log("Инвертировали порядок сортировки");
-  }
-  
-  else {
-    data.sort(getComparer(prop));
-    skills.sortMode = prop;
-    console.log("Отсортировали данные");
-  }
-
-  skills.generateList(skillList);
-
-  console.log(data);
-};
 
 
 function getComparer (prop) {
