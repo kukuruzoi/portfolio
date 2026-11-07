@@ -113,19 +113,33 @@ const btnNav = document.querySelector(".nav-btn");
 console.log(mainNav);
 console.log(btnNav);
 
+const menu = {
+  close: function () {
+    mainNav.classList.add('main-nav_closed');
+    btnNav.classList.remove('nav-btn_close');
+    btnNav.classList.add('nav-btn_open');
+    btnNav.innerHTML = '<span class="visually-hidden">Открыть меню</span>'
+  },
+
+  open: function () {
+    mainNav.classList.remove('main-nav_closed');
+    btnNav.classList.remove('nav-btn_open');
+    btnNav.classList.add('nav-btn_close');
+    btnNav.innerHTML = '<span class="visually-hidden">Закрыть меню</span>'
+  }
+}
+
+
+menu.close();
+
+
 btnNav.addEventListener("click", (e) => {
   let target = e.target;
 
-  if (target.tagName == "BUTTON") {
-    console.log("Нажата кнопка закрытия");
+  if (target.classList.contains("nav-btn_open")) {
+    menu.open();
+  }
+  else {
+    menu.close();
   }
 });
-
-
-function closeMenu () {
-  mainNav.classList.add('main-nav_closed');
-  btnNav.classList.remove('nav-btn_close');
-  btnNav.classList.add('nav-btn_open');
-  btnNav.innerHTML = '<span class="visually-hidden">Открыть меню</span>'
-};
-closeMenu();
