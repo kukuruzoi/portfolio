@@ -119,4 +119,13 @@ btnNav.addEventListener("click", (e) => {
   if (target.tagName == "BUTTON") {
     console.log("Нажата кнопка закрытия");
   }
-})
+});
+
+
+function closeMenu () {
+  mainNav.classList.add('main-nav_closed');
+  btnNav.classList.remove('nav-btn_close');
+  btnNav.classList.add('nav-btn_open');
+  btnNav.innerHTML = '<span class="visually-hidden">Открыть меню</span>'
+};
+closeMenu();
